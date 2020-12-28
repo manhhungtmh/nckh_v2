@@ -66,9 +66,9 @@
                     <li>
                         <a href="#"><i class="fa fa-bar-chart-o"></i> <span class="nav-label">Báo cáo</span><span class="fa arrow"></span></a>
                         <ul class="nav nav-second-level collapse">
-                            <li><a href="">Lập báo cáo danh sách hoạt động NCKH</a></li>
-                            <li><a href="">Lập báo cáo danh sách các MC của các hoạt động Khoa học của CBGV</a></li>
-                            <li><a href="">Lập báo cáo danh sách tổng hợp số lượng MC hoạt động KHCN của từng CBGV trong từng đơn vị</a></li>
+                            <li><a href="LapbaocaohoatdongNCKH.html">Lập báo cáo danh sách hoạt động NCKH</a></li>
+                            <li><a href="LapbaocaominhchungNCKH.html">Lập báo cáo danh sách các MC của các hoạt động Khoa học của CBGV</a></li>
+                            <li><a href="LapbaocaohoatdongNCKHtheodonvi.html">Lập báo cáo danh sách tổng hợp số lượng MC hoạt động KHCN của từng CBGV trong từng đơn vị</a></li>
                         </ul>
                     </li>
                 </ul>
@@ -180,12 +180,49 @@
                             <form>
                                 <div class="form-group row"><label class="col-lg-4 col-form-label">Tên hoạt động NCKH</label>
 
-                                    <div class="col-lg-8"><input type="text" placeholder="Tên hoạt động NCKH" class="form-control"> 
+                                    <div class="col-lg-8"><input type="text" placeholder="NCKH SV năm học 2019-2020" class="form-control"> 
                                     </div>
                                 </div>
                                 <div class="form-group row"><label class="col-lg-4 col-form-label">Năm học</label>
 
-                                    <div class="col-lg-8"><input type="text" placeholder="Năm học" class="form-control"></div>
+                                    <div class="col-lg-8"><input type="text" placeholder="2019-2020" class="form-control"></div>
+                                </div>
+                                <table class="table table-bordered">
+                                    <thead>
+                                        <tr>
+                                            <th class="text-center">#</th>
+                                            <th class="text-center">Tên giảng viên tham gia</th>
+                                            <th class="text-center">Hành động</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td class="text-center">1</td>
+                                            <td class="text-center">Nguyễn Đức Tuấn</td>
+                                            <td class="text-center">
+                                                <button class="btn btn-sm btn-danger" type="submit"><i class="fa fa-times" aria-hidden="true"></i>&nbsp;Xóa</button>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="text-center">2</td>
+                                            <td class="text-center">Mai Thị Thúy Hà</td>
+                                            <td class="text-center">
+                                                <button class="btn btn-sm btn-danger" type="submit"><i class="fa fa-times" aria-hidden="true"></i>&nbsp;Xóa</button>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="text-center">3</td>
+                                            <td class="text-center">Thái Thanh Tùng</td>
+                                            <td class="text-center">
+                                                <button class="btn btn-sm btn-danger" type="submit"><i class="fa fa-times" aria-hidden="true"></i>&nbsp;Xóa</button>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <div class="text-right">
+                                    <button class="btn btn-sm btn-primary" type="submit">
+                                        <i class="fa fa-plus" aria-hidden="true"></i>&nbsp;Thêm
+                                    </button>
                                 </div>
                                 <div class="form-group row">
                                     <div class="col-lg-offset-2 col-lg-10">
@@ -217,28 +254,28 @@
                                     </thead>
                                     <tbody>
                                         <tr>
-                                            <td>1</td>
+                                            <td class="text-center">1</td>
                                             <td>NCKH SV năm học 2019-2020</td>
-                                            <td>2019-2020</td>
-                                            <td>
+                                            <td class="text-center">2019-2020</td>
+                                            <td class="text-center">
                                                 <button class="btn btn-sm btn-success" type="submit">Sửa</button>
                                                 <button class="btn btn-sm btn-danger" type="submit">Xóa</button>
                                             </td>
                                         </tr>
                                         <tr>
-                                            <td>2</td>
+                                            <td class="text-center">2</td>
                                             <td>NCKH SV năm học 2018-2019</td>
-                                            <td>2018-2019</td>
-                                            <td>
+                                            <td class="text-center">2018-2019</td>
+                                            <td class="text-center">
                                                 <button class="btn btn-sm btn-success" type="submit">Sửa</button>
                                                 <button class="btn btn-sm btn-danger" type="submit">Xóa</button>
                                             </td>
                                         </tr>
                                         <tr>
-                                            <td>3</td>
+                                            <td class="text-center">3</td>
                                             <td>NCKH SV năm học 2017-2018</td>
-                                            <td>2017-2018</td>
-                                            <td>
+                                            <td class="text-center">2017-2018</td>
+                                            <td class="text-center">
                                                 <button class="btn btn-sm btn-success" type="submit">Sửa</button>
                                                 <button class="btn btn-sm btn-danger" type="submit">Xóa</button>
                                             </td>
@@ -255,9 +292,6 @@
             <div class="footer">
                 <div class="float-right">
                     Đề tài Nghiên cứu Khoa học - <b>TS. Nguyễn Đức Tuấn</b>
-                </div>
-                <div>
-                    <strong>Copyright</strong> Example Company &copy; 2014-2018
                 </div>
             </div>
 

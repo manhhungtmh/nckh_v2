@@ -6,7 +6,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Danh mục cán bộ</title>
+    <title>Lập báo cáo danh sách tổng hợp số lượng MC hoạt động KHCN của từng CBGV trong từng đơn vị</title>
 
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="font-awesome/css/font-awesome.css" rel="stylesheet">
@@ -152,13 +152,13 @@
             </div>
             <div class="row wrapper border-bottom white-bg page-heading">
                 <div class="col-lg-10">
-                    <h2>Danh mục loại cán bộ</h2>
+                    <h2>Lập báo cáo danh sách tổng hợp số lượng MC hoạt động KHCN của từng CBGV trong từng đơn vị</h2>
                     <ol class="breadcrumb">
                         <li class="breadcrumb-item">
-                            <a href="index.html">Quản lý danh mục</a>
+                            <a href="index.html">Báo cáo</a>
                         </li>
                         <li class="breadcrumb-item active">
-                            <strong>Danh mục loại cán bộ</strong>
+                            <strong>Lập báo cáo danh sách tổng hợp số lượng MC hoạt động KHCN của từng CBGV trong từng đơn vị</strong>
                         </li>
                     </ol>
                 </div>
@@ -168,75 +168,82 @@
             </div>
             <div class="wrapper wrapper-content animated fadeInRight">
                 <div class="row">
-                    <div class="col-lg-6">
-                    <div class="ibox ">
-                        <div class="ibox-title">
-                            <h5>Thêm/Sửa loại cán bộ</h5>
-                            <div class="ibox-tools">
-    
-                            </div>
-                        </div>
-                        <div class="ibox-content">
-                            <form>
-                                <div class="form-group row"><label class="col-lg-4 col-form-label">Mã loại cán bộ</label>
-
-                                    <div class="col-lg-8"><input type="text" placeholder="Mã loại cán bộ" class="form-control"> 
+                    <div class="col-lg-12">
+                        <div class="ibox ">
+                            <div class="ibox-content">
+                                <div class="form-group row">
+                                    <div class="col-sm-12">
+                                        <div class="row">
+                                            <div class="col-md-3">
+                                                <label>Chọn đơn vị</label>
+                                                <select class="form-control m-b" name="account">
+                                                    <option>Khoa Công nghệ thông tin</option>
+                                                    <option>Khoa Điện tử thông tin</option>
+                                                    <option>Khoa Kiến trúc</option>
+                                                    <option>Khoa Tiếng Anh</option>
+                                                </select>
+                                            </div>
+                                            <div class="col-md-3">
+                                                <label>Chọn ngày bắt đầu</label>
+                                                <input type="date" class="form-control">
+                                            </div>
+                                            <div class="col-md-3">
+                                                 <label>Chọn ngày kết thúc</label>
+                                                <input type="date" class="form-control">
+                                            </div>
+                                            <div class="col-md-3">
+                                                 <label>&nbsp;</label> <br>
+                                                <button class="btn btn-primary btn-sm" type="button">Tra cứu</button>
+                                                <button class="btn btn-white btn-sm" type="button" onclick="window.print()">In báo cáo</button>
+                                            </div>
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="form-group row"><label class="col-lg-4 col-form-label">Tên loại cán bộ</label>
-
-                                    <div class="col-lg-8"><input type="text" placeholder="Tên loại cán bộ" class="form-control"></div>
                                 </div>
                                 <div class="form-group row">
-                                    <div class="col-lg-offset-2 col-lg-10">
-                                        <button class="btn btn-sm btn-white" type="submit">Xác nhận</button>
-                                    </div>
-                                </div>
-                            </form>
-                        </div>
-                    </div>
-                </div>
-                    <div class="col-lg-6">
-                        <div class="ibox ">
-                            <div class="ibox-title">
-                                <h5>Danh sách loại cán bộ </h5>
-                                <div class="ibox-tools">
-
-                                </div>
-                            </div>
-                            <div class="ibox-content">
-
-                                <table class="table table-bordered">
+                                    
+                                    
+                                    <div class="col-md-10">
+                                    <table class="table table-bordered">
                                     <thead>
                                         <tr>
-                                            <th>#</th>
-                                            <th>Mã loại cán bộ</th>
-                                            <th>Tên loại cán bộ</th>
+                                            <th class="text-center">#</th>
+                                            <th class="text-center">Tên giảng viên</th>
+                                            <th class="text-center">Tổng số minh chứng</th>
+                                            <th class="text-center">Hành động</th>
                                         </tr>
                                     </thead>
                                     <tbody>
                                         <tr>
-                                            <td>1</td>
-                                            <td>GV1</td>
-                                            <td>Giảng viên hạng I</td>
+                                            <td class="text-center">1</td>
+                                            <td>TS Nguyễn Đức Tuấn</td>
+                                            <td class="text-center">22</td>
+                                            <td class="text-center">
+                                                <button class="btn btn-primary btn-sm" >Xem chi tiết</button>
+                                            </td>
                                         </tr>
                                         <tr>
-                                            <td>2</td>
-                                            <td>GV2</td>
-                                            <td>Giảng viên hạng II</td>
+                                            <td class="text-center">2</td>
+                                            <td>ThS Lê Hữu Dũng</td>
+                                            <td class="text-center">12</td>
+                                            <td class="text-center">
+                                                <button class="btn btn-primary btn-sm" >Xem chi tiết</button>
+                                            </td>
                                         </tr>
                                         <tr>
-                                            <td>3</td>
-                                            <td>GV3</td>
-                                            <td>Giảng viên hạng III</td>
+                                            <td class="text-center">3</td>
+                                            <td>ThS Mai Thị Thúy Hà</td>
+                                            <td class="text-center">10</td>
+                                            <td class="text-center">
+                                                <button class="btn btn-primary btn-sm" >Xem chi tiết</button>
+                                            </td>
                                         </tr>
                                     </tbody>
                                 </table>
-
+                                </div>
+                                </div>
                             </div>
                         </div>
                     </div>
-
                 </div>
             </div>
             <div class="footer">
